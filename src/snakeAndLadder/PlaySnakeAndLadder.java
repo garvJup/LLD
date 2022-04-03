@@ -5,8 +5,8 @@ import java.util.*;
 public class PlaySnakeAndLadder {
     public static void main(String[] args) {
         Dice dice = new Dice(1);
-        Player p1 = new Player("Alberts", 1);
-        Player p2 = new Player("Pintoss", 2);
+        Player p1 = new Player("Garv", 1);
+        Player p2 = new Player("Rakshit", 2);
         Queue<Player> allPlayers = new LinkedList<>();
         allPlayers.offer(p1);
         allPlayers.offer(p2);
@@ -21,8 +21,8 @@ public class PlaySnakeAndLadder {
         ladders.add(ladder1);
         ladders.add(ladder2);
         Map<String, Integer> playersCurrentPosition = new HashMap<>();
-        playersCurrentPosition.put("Alberts", 0);
-        playersCurrentPosition.put("Pintoss", 0);
+        playersCurrentPosition.put("Garv", 0);
+        playersCurrentPosition.put("Rakshit", 0);
         GameBoard gb = new GameBoard(dice, allPlayers, snakes, ladders, playersCurrentPosition, 100);
         gb.startGame();
     }

@@ -28,7 +28,7 @@ public class GameBoard {
             int diceValue = dice.rollDice();
 
             int nextCell = diceValue + currentPosition;
-            System.out.println("DICE " + diceValue);
+            System.out.println("DICE - " + diceValue);
             if (nextCell > boardSize) {
                 nextTurn.offer(player);
             } else if (nextCell == boardSize) {
